@@ -74,6 +74,11 @@ source /opt/ros/humble/setup.sh
 ./build.sh humble
 ```
 
+#### IP address change
+Go to config/{LIVOX_TYPE}_config.json and change `cmd_data_ip`, `push_msg_ip`, `point_data_ip`, and `point_data_ip` under `host_net_info`, and `ip` under `lidar_configs` accordingly.
+All the ip's under `host_net_info` are recommended to be `1.50` and the ip under `lidar_configs` is `1.1{LAST_TWO_SERIAL_NUMBERS}` (i.e. 1.187 if the serial number is 47MDLCD0020287)
+
+
 ### 2.4 Run Livox ROS Driver 2:
 
 #### For ROS:
