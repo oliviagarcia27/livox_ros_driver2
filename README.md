@@ -73,6 +73,12 @@ source /opt/ros/foxy/setup.sh
 source /opt/ros/humble/setup.sh
 ./build.sh humble
 ```
+#### Locating Livox-SDK2 Library 
+To resolve issues related to locating the Livox-SDK2 library, you need to properly set the LD_LIBRARY_PATH environment variable before building the project. You can do this by executing the following command to include the necessary library paths:
+
+``` export LD_LIBRARY_PATH=/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/include
+```
+
 
 #### IP address change
 
